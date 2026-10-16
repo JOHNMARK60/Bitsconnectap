@@ -1,0 +1,40 @@
+00:00 +0: loading C:/laragon/www/bits_mobile_app/test/api_exception_test.dart
+00:00 +0: C:/laragon/www/bits_mobile_app/test/attendance_result_model_test.dart: parses recognized student details for face-attendance feedback
+00:00 +1: C:/laragon/www/bits_mobile_app/test/attendance_result_model_test.dart: preserves exact Laravel duplicate attendance messages
+00:00 +2: C:/laragon/www/bits_mobile_app/test/api_exception_test.dart: preserves Laravel duplicate message over metadata booleans
+00:02 +3: C:/laragon/www/bits_mobile_app/test/event_model_attendance_control_test.dart: uses attendance mode and enabled status from Laravel payload
+00:04 +4: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: groups only active events scheduled today as current
+00:04 +5: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: hides future events from current and recent groups
+00:04 +6: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: sorts recent events by latest completed first
+00:05 +7: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: uses event date end of day when no end time is available
+00:05 +8: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: keeps an event current through the full logout minute
+00:05 +9: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: moves closed events scheduled today to recent events
+00:05 +10: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: treats Laravel UTC ISO datetimes as campus wall-clock time
+00:05 +11: C:/laragon/www/bits_mobile_app/test/event_timeline_test.dart: campusNow returns a wall-clock DateTime, not a UTC instant
+00:08 +12: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: GeofenceHelper uses the specified venue and 120-meter radius
+00:08 +13: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: GeofenceHelper accepts a position approximately 40 meters away
+00:08 +14: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: GeofenceHelper rejects a position approximately 121 meters away
+00:08 +15: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: ScannerController geofence validation submits all required location fields when inside the radius
+Retrieving GPS location for attendance validation.
+Location retrieved: lat=10.355321079699701, longitude=124.96613355189002.
+Calculated event distance: 0.00 meters.
+Student inside 120-meter radius: 0.00 meters away.
+Successful attendance validation by Laravel.
+00:08 +16: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: ScannerController geofence validation does not submit attendance when outside the radius
+Retrieving GPS location for attendance validation.
+Location retrieved: lat=10.35640803622144, longitude=124.96613355189002.
+Calculated event distance: 121.00 meters.
+Student outside 120-meter radius: 121.00 meters away.
+00:08 +17: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: ScannerController geofence validation does not submit when location fails: Location services are disabled. Please enable GPS to continue.
+Retrieving GPS location for attendance validation.
+Attendance location validation failed: Location services are disabled. Please enable GPS to continue.
+00:08 +18: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: ScannerController geofence validation does not submit when location fails: Location permission is required to record attendance.
+Retrieving GPS location for attendance validation.
+Attendance location validation failed: Location permission is required to record attendance.
+00:08 +19: C:/laragon/www/bits_mobile_app/test/scanner_controller_test.dart: ScannerController geofence validation does not submit when location fails: Location permission has been permanently denied. Please enable it in device settings.
+Retrieving GPS location for attendance validation.
+Attendance location validation failed: Location permission has been permanently denied. Please enable it in device settings.
+00:17 +20: C:/laragon/www/bits_mobile_app/test/widget_test.dart: BITS app starts on the public landing flow
+00:20 +21: C:/laragon/www/bits_mobile_app/test/widget_test.dart: /login shows the CampusHub landing page
+00:20 +22: C:/laragon/www/bits_mobile_app/test/widget_test.dart: landing CTA opens login form modal
+00:23 +23: All tests passed!
